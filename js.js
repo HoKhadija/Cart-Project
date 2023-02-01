@@ -215,36 +215,3 @@ label.style.marginLeft = "251px";
 label.appendChild(totalPrice);
 element.appendChild(label);
 
-
-
-
-
-
-
-// const tattr = document.createAttribute("id");
-// tattr.value = "prodTable";
-// const t1 = document.getElementsByTagName("table")[0];
-// t1.setAttributeNode(tattr);
-
-
-
-
-
-// const newTitl = document.createElement('h1');
-// const titleCnt = document.createTextNode('My Shopping Cart');
-// newTitle.appendChild(titleCont);
-
-// // const element = document.getElementById("cart");
-// element.appendChild(newTitle);
-
-
-
-
-
-
-
-
-
-
-// let tbody = document.getElementById('tbody');
-
