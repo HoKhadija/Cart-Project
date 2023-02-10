@@ -30,7 +30,7 @@ const dataProd = [
         prodPrice: 225,
         prodImg: "Pics/Grey-Dress-Party.jpg",
         prodQuantity: 0,
-        buyed : true,
+        buyed: true,
     },
     {
         prodId: 2,
@@ -38,7 +38,7 @@ const dataProd = [
         prodPrice: 189,
         prodImg: "Pics/Somo-Dress-Party.jpg",
         prodQuantity: 0,
-        buyed : true,
+        buyed: true,
     },
     {
         prodId: 3,
@@ -46,7 +46,7 @@ const dataProd = [
         prodPrice: 129,
         prodImg: "Pics/Brown-Dress.jpg",
         prodQuantity: 0,
-        buyed : true,
+        buyed: true,
     },
     {
         prodId: 4,
@@ -54,7 +54,7 @@ const dataProd = [
         prodPrice: 179,
         prodImg: "Pics/Dresses&Headband.jpg",
         prodQuantity: 0,
-        buyed : true,
+        buyed: true,
 
     }
 ]
@@ -177,16 +177,16 @@ dataProd.forEach(item => {
         let prix = item.prodQuantity * item.prodPrice;
         UP.innerHTML = prix + " $";
         totalPrice.innerHTML = getTotale() + " $"
-        
+
     });
 
-  
+
     td4.appendChild(UP);
     tr.appendChild(td4);
     tbody.appendChild(tr);
 
 });
-   
+
 table.appendChild(tbody);
 element.appendChild(table);
 
@@ -195,12 +195,12 @@ let label = document.createElement('label');
 label.textContent = ('Total Price :');
 
 var totalPrice = document.createElement('span');
-totalPrice.setAttribute("style","color:white")
+totalPrice.setAttribute("style", "color:white")
 
 function getTotale() {
-    
-    return dataProd.filter(e => e.buyed == true ? e : "").reduce((accumulateur, currentvalue) => accumulateur += currentvalue.prodPrice * currentvalue.prodQuantity,0)
-   
+
+    return dataProd.filter(e => e.buyed == true ? e : "").reduce((accumulateur, currentvalue) => accumulateur += currentvalue.prodPrice * currentvalue.prodQuantity, 0)
+
 }
 
 label.style.color = "#660033";
